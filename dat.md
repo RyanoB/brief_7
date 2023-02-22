@@ -1,3 +1,23 @@
+# DAT
+
+## Objectif 
+
+L’application Voting App doit être accessible aux utilisateurs via internet cette
+dernière doit être mise à jour automatiquement.
+
+## Solution
+
+Utilisation d’un script K8S afin de déployer une première fois l’infrastructure.
+Puis mise en place d’un pipeline GitHub Action qui modifie la Voting App pour
+la mettre à jour.
+
+## Pourquoi GitHub ACTION ?
+
+Tout d’abord c’est un service en ligne (ne nécessite pas de déploiement en
+amont) de plus notre code est déjà sur GitHub et finalement c’est un outil
+moderne et en plein essors.
+
+
 ### Explication du pipeline
 
 Avant l'éxécution du pipeline, un cluster doit être déployé sur Azure, et l'infrastructure de base doit y être déployée. 
